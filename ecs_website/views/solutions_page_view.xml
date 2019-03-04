@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Solutions page -->
+        <record id="solutions" model="ir.ui.view">
+            <field name="name">Solutions</field>
+            <field name="type">qweb</field>
+            <field name="key">website.solutions</field>
+            <field name="arch" type="xml">
+                <t name="Solution" t-name="website.solutions">
+                    <t t-call="website.layout">
+                        <t t-set="title">Ecosoft | Your ERP Partner</t>
+                        <div class="oe_structure oe_empty">
+                            <section class="s_cover parallax pb40 pt128" data-scroll-background-ratio="0" style="background-image: none;">
+                                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website/static/src/img/background/solutions/banner_solution.jpg&quot;); background-position: 50% 0px;"/>
+                                <div class="container main-body">
+                                    <div class="row s_nb_column_fixed" id="white">
+                                        <div class="col-lg-12 s_title" data-name="Title">
+                                            <h1 class="s_title_thin o_default_snippet_text">
+                                                <span class="font-bold" id="white">OUR ODOO SOLUTION</span>
+                                            </h1>
+                                        </div>
+                                        <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                                            <p class="lead o_default_snippet_text">
+                                                <span id="smoke">Home | </span>
+                                                <span class="font-bold">Solutions</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="container main-body">
+                                <div class="top-5-percent">
+                                    <h2 class="pb16 text-center">
+                                        <span>ENTERPRISE</span>
+                                        <span id="green">RESOURCE PLANNING</span>
+                                    </h2>
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-6 pt16 pb0">
+                                            <p class="text-muted o_default_snippet_text">
+                                                เป็นระบบจัดการองค์กรแบบองค์รวม สำหรับการจัดการทรัพยากรทั้งภายใน, ภายนอก รวมไปถึงทรัพย์สินที่จับต้องได้, ทรัพยากรด้านการเงิน, วัสดุและบุคลากรขององค์กร ERP เป็นระบบซอฟต์แวร์ขนาดใหญ่ที่มีเป้าหมายในการช่วยให้การส่งต่อข้อมูลของทุกฝ่ายในองค์กรเป็นไปอย่างราบรื่น โดยรวมถึงจัดการการเชื่อมต่อข้อมูลกับภายนอกด้วย
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb0">
+                                            <p class="text-muted o_default_snippet_text">
+                                                ด้วยประสบการณ์การวางระบบ Open Source ERP มายาวนาน เราเชื่อว่าไม่มีระบบใดที่เหมาะสมกับทุกธุรกิจและทุกความต้องการของลูกค้า เพื่อให้ได้โซลูชั่นที่เหมาะสม สิ่งที่เราทำคือคัดเลือกระบบ Open Source ERP ที่เหมาะที่สุดเพื่อตอบโจทย์ทางธุรกิจของลูกค้าแต่ละประเภท และจากการศึกษา Open Source ERP ทุกตัวในตลาด เราได้เลือกเฟ้นซอฟต์แวร์ที่ดีที่สุดในตลาดเวลานี้ นั่นคือ Odoo
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center top-5-percent">
+                                    <div class="col-lg-6">
+                                        <h2 class="o_default_snippet_text" id="green">FEATURE</h2>
+                                        <div class="o_default_snippet_text">
+                                            <div class="row text-muted">
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Accounting &amp; Financial Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Document &amp; Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Analytic</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Payroll Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Customer &amp; Supplier Portal</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Service Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Sales Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Warehouse Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Project Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Purchase Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Manufacturing Management</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Human Resources</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">CRM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">After-Sales Services</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">POS</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">Direct Marketing</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 pt4 pb4" data-name="Box">
+                                                    <i class="fa fa-2x fa-check-circle s_features_grid_icon" id="green"/>
+                                                    <div class="s_features_grid_content">
+                                                        <p class="o_default_snippet_text font-16">and 200+ more application</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pt16">
+                                        <img src="/ecs_website/static/src/img/background/solutions/img_solution.jpg" class="img img-fluid mx-auto"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="s_cover parallax pb32 top-5-percent" data-scroll-background-ratio="0" style="background-image: none;">
+                                <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url(&quot;/ecs_website/static/src/img/background/solutions/background_odoo_02.jpg&quot;); background-position: 50% 0px;"/>
+                                <div class="container main-body">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_text pt32" data-name="Text">
+                                            <img src="/ecs_website/static/src/img/icon/icon_doubleQuote.png" class="img-center img-convert-to-white"/>
+                                        </div>
+                                        <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                                            <p class="lead o_default_snippet_text text-center" id="white">Odoo comes out of the box with very simple options. if you need a simple ERP system help you manage your business, Odoo will look and feel comfortable. Odoo comes with 500+ modules to be expanded as you grow. It is the only piece of software your organization will need.</p>
+                                        </div>
+                                        <div class="col-lg-12 s_btn pt8 text-center" data-name="Buttons">
+                                            <a href="/aboutus" class="btn btn-white rounded-circle" aria-describedby="tooltip392182">Learn odoo more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="container main-body">
+                                <div class="top-5-percent">
+                                    <h4>OPEN SOURCE ERP เหมาะกับธุรกิจของท่านหรือไม่</h4>
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-6 pt16">
+                                            <p class="text-muted o_default_snippet_text">
+                                                เป็นเวลานานที่ตลาดซอฟต์แวร์ ERP ถูกครอบงำโดย ERP ลิขสิทธิ์ราคาแพงอย่าง SAP, Oracle หรือถ้าสำหรับธุรกิจขนาดกลางและเล็กอย่าง Dynamics ปัญหาใหญ่ที่เราได้ยินนอกจากเรื่องราคา (ซึ่งแน่นอนว่าเป็นหลักหลายล้านถึงหลายสิบล้าน) คือเรื่องความไม่เป็นอิสระ ทั้งอิสระในแง่การผูกขาดกับผู้ขายอิสระในแง่การแก้ไขระบบให้เหมาะกับธุรกิจ และสิทธิขาดในการเป็นเจ้าของซอฟต์แวร์
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6 pt16">
+                                            <p class="text-muted o_default_snippet_text">
+                                                จุดประสงค์ของบทความส่วนนี้ก็เพื่อให้ความรู้กับองค์กรสมัยใหม่ขนาดกลางและเล็กที่ต้องการหาซอฟต์แวร์เพื่อการเพิ่มประสิทธิภาพอย่าง ERP เราหวังว่าเนื้อหาส่วนนี้จะให้ความเข้าใจกับ Open Source ERP และความเหมาะสมในเชิงธุรกิจอย่างตรงไปตรงมา
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="top-5-percent">
+                                    <h4>จุดเด่นของ OPEN SOURCE ERP ที่เหนือกว่า LICENSED ERP</h4>
+                                    <div class="pt16 text-muted">
+                                        จากประสบการณ์ที่เคยทำงานมาทั้ง Open Source ERP และ Licensed ERP เราพบว่า Open Source ERP ได้ถูกพัฒนามาถึงจุดที่พร้อมใช้งานและมีข้อได้เปรียบ Licensed ERP หลายประการ
+                                    </div>
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-6 pt16">
+                                            <div class="col-lg-12 pt16 pb16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">01</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        Open Source ERP ได้รับการพัฒนาต่อเนื่องมาร่วม 10 ปี ปัจจุบันได้การยอมรับและใช้งานจากองค์กรจำนวนมากทั้งในและต่างประเทศ
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 pt16 pb16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">02</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        ไม่จำกัด License นั่นหมายถึงทุกคนในองค์กรสามารถใช้ระบบได้อย่างไม่จำกัดโดยไม่มีค่าใช้จ่ายเพิ่มเติม จุดนี้เป็นความได้เปรียบที่สำคัญมากสำหรับบริษัทขนาดกลางซึ่งมีความต้องการเพิ่มผู้ใช้งานอยู่เสมอ นี่เป็นปัญหาใหญ่มากสำหรับซอฟต์แวร์ License ERP อย่าง SAP/Oracle/Dynamics (No Pay, No Gain)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 pt16 pb16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">03</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        ซอร์สโค้ดแบบเปิดช่วยให้ทุกอย่างง่ายขึ้น หลายๆครั้งในสถานการณ์จริง การอ่านโค้ดได้มีประโยชน์กับความเข้าใจในระบบอย่างมาก องค์กรสามารถแก้ไขหรือปรับแต่งระบบได้เอง ซึ่งในบางครั้งการแก้ไขเล็กน้อยอาจหมายถึงประสิทธิภาพในการทำงานที่เพิ่มสูงขึ้นอย่างมาก
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 pt16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">04</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        รองรับโหลดการทำงานได้สูงอย่างไม่น่าเชื่อ Linux Server + Odoo / Adempiere + PostgreSQL รองรับการใช้งานของคน 100 คนพร้อมๆกันได้โดยที่ไม่ต้องปรับแต่งระบบอะไรมากและไม่มีค่าใช้จ่ายด้าน License (ในขณะที่ 100 concurrent users ใน Microsoft Dynamics AX ต้องเสียค่า license เพิ่ม 1 license/ปี ประมาณ 70,000 บาท และ SAP ประมาณ 150,000 บาท)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16">
+                                            <div class="col-lg-12 pt16 pb16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">05</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        ด้วยความเป็นระบบเปิด และใช้ Open Technology ทั้งหมดทำให้ง่ายกว่าหากต้องมีการเชื่อมต่อกับระบบหลังบ้านอื่นๆ เช่น BI, Document Management, หรือ middleware automation อื่นๆ (จากประสบการณ์ในวงการซอฟต์แวร์แบบปิดมาเป็นสิบปี การเชื่อมต่อกับระบบอื่นเป็นเรื่องใหญ่และยุ่งยากมาก โดยเฉพาะหากต่อเชื่อมกับระบบปิดด้วยกันเอง)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 pt16 pb16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">06</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        รองรับการใช้งานชั้นสูงอย่าง Multi-Languages สำหรับองค์กรที่มีขนาดใหญ่และมีหลายหน่วยงานภายใน ความสามารถนี้สำคัญในการทำให้การออกรายงานระบบบัญชีข้ามหน่วยงาน การจัดการด้านการเงินและปิดบัญชี มีความสะดวกรวดเร็ว
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 pt16 pb16" data-name="Box">
+                                                <p class="s_features_grid_icon font-42 font-bold" id="green">07</p>
+                                                <div class="s_features_grid_content">
+                                                    <p class="o_default_snippet_text text-muted">
+                                                        ใส่ข้อความที่นี้
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="s_text_image top-5-percent bg-whitesmoke">
+                                <div class="container main-body">
+                                    <div class="row pt16">
+                                        <div class="col-lg-6 pb16">
+                                            <img src="/ecs_website/static/src/img/background/solutions/infographic_2.png" class="img img-fluid mx-auto"/>
+                                        </div>
+                                        <div class="col-lg-6 pb16">
+                                            <h4 class="pt16">ข้อได้เปรียบด้านราคา</h4>
+                                            <p class="o_default_snippet_text text-muted pt16">ราคาถือเป็นจุดเด่นอีกข้อของการสร้างระบบ ERP ด้วย Open Source โดยเราสามารถตัดค่าใช้จ่ายจาก License ทิ้งได้ทั้งหมด</p>
+                                            <p class="o_default_snippet_text text-muted">เมื่อเทียบกับ Licensed ERP ระดับเดียวกันอย่าง Microsoft Dynamics โปรเจคระดับเริ่มต้น (user license &lt; 10) จะมีค่าใช้จ่ายโดยเฉลี่ยถูกกว่าประมาณ 50% โดยความต่างของราคาจะมากขึ้นเรื่อยๆหากจำนวน user license เพิ่มขึ้น</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="container main-body top-5-percent pb64">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>หากเปรียบ OPEN SOURCE ERP กับ TIER 1 ERP (SAP/ORACLE)</h4>
+                                        <p class="o_default_snippet_text text-muted pt16">ความสามารถในเชิง Business Functionality ของ Open Source ERP อาจไม่เทียบเท่า Tier 1 ERP อย่าง SAP หรือ Oracle แต่เราพบว่า Open Source ERP มีความสามารถพื้นฐานทั้งหมดที่ ERP ดีๆพึงมี (โดยไม่มีค่า License) เราอาจอุปมาอุปไมยได้ดังนี้</p>
+                                        <p class="o_default_snippet_text text-muted">หากเปรียบเทียบ SAP/Oracle หมือนกับเสื่อขนาด 10x10 ตารางเมตรที่อยู่ในห้องขนาด 10x10 ตารางเมตร คลอบคลุมทุกๆมุมของห้อง ทั้งในแง่ Business Functionality, Market Visibility และ Reporting <br/>Open Source ERP น่าจะเปรียบได้กับพื้นที่การใช้งานส่วนใหญ่ของเสื่อที่อาจจะอยู่ที่ 9x9 ตารางเมตรมากกว่าหรือน้อยกว่าขึ้นอยู่กับประเภทของเสื่อหรืออีกนัยคือ 80% ของการใช้งานส่วนใหญ่ อาจขาดบาง Functionality, Reports คำถามอยู่ที่ว่า ส่วนที่ Open Source ERP ทำงานได้รองรับธุรกิจของคุณหรือไม่ สิ่งที่อาจมาทดแทนกับความสามารถบางส่วนที่ขาดหายไปก็คือความสามารถในการปรับแต่งระบบได้ง่ายกว่ามากกว่าและลึกกว่า</p>
+                                        <p class="o_default_snippet_text text-muted pt16">ในเชิง Technology เราพบว่า Open Source ERP กลับมีความก้าวหน้ามากกว่าในหลายๆด้าน ด้วยความเป็น Open Source ซึ่งถูกพัฒนาอย่างต่อเนื่องและมักใช้ Open Technology ที่ดีที่สุดในขณะนั้น</p>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>ธุรกิจขนาดใดเหมาะกับ OPEN SOURCE ERP</h4>
+                                        <p class="o_default_snippet_text text-muted pt40">เราพบว่าธุรกิจขนาดเล็กบนถึงกลาง (100M Baht - 1,000M Baht) ที่พร้อมรับการเปลี่ยนแปลงมักได้ประโยชน์สูงสุดจากซอฟต์แวร์ประเภทนี้ เหตุผลคือธุรกิจกลุ่มนี้จะมีแผนก IT หรือพนักงานที่มีความรู้ในการเรียนรู้และได้รับประโยชน์จากข้อดีของ Open Source เราพบว่าการปรับแต่งระบบเล็กน้อยได้อย่างอิสระสามารถเพิ่มประสิทธิภาพการใช้งานได้อย่างมาก</p>
+                                        <p class="o_default_snippet_text text-muted">สำหรับธุรกิจขนาดใหญ่และสามารถจ่ายเงิน 10 - 100 ล้านบาทสำหรับระบบ ERP ได้โดยไม่มีปัญหา และคิดว่าจะไม่มีปัญหาในอนาคตกับคำว่า License ที่จะเพิ่มมากขึ้นเรื่อยๆ เราคิดว่า SAP/Oracle หรือ Dynamics ก็เป็นคำตอบที่ดี</p>
+                                        <p class="o_default_snippet_text text-muted">สำหรับธุรกิจขนาดเล็กและไม่มีผู้มีความรู้ด้าน IT ซอฟต์แวร์ ERP อาจไม่เหมาะสมซะทีเดียว เพราะ ERP เน้นที่ความถูกต้องของกระบวนการมากกว่าความคล่องตัวของธุรกิจ หลายครั้งเราพบว่า ซอฟต์แวร์บัญชีของไทยที่มีอยู่มากมายในท้องตลาดก็อาจเป็นตัวเลือกที่ดีกว่า</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+        <record id="solutions_page" model="website.page">
+            <field name="url">/solutions</field>
+            <field name="website_published">True</field>
+            <field name="view_id" ref="solutions"/>
+        </record>
+
+    </data>
+</odoo>

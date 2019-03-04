@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- page list view  -->
+    <record id="view_subscribe_post_list" model="ir.ui.view">
+        <field name="name">subscribe.post.list</field>
+        <field name="model">subscribe.post</field>
+        <field name="arch" type="xml">
+            <tree string="Subscribe Posts">
+                <field name="contact_email"/>
+                <field name="write_uid"/>
+                <field name="write_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_subscribe" model="ir.actions.act_window">
+        <field name="name">Email Subscribe</field>
+        <field name="res_model">subscribe.post</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_subscribe_post_list"/>
+        <!-- <field name="search_view_id" ref="view_blog_post_search"/> -->
+        <field name="help" type="html">
+            <p class="o_view_nocontent_empty_folder">
+                Not email subscribe
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="Subscribe"
+        id="menu_subscribe"
+        sequence="25"
+        parent="website.menu_website_configuration"
+        action="action_subscribe"/>
+
+</odoo>

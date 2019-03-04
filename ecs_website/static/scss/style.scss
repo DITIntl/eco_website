@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Regular.ttf') format('truetype');
+}
+body {
+    font-family: 'Kanit';
+}
+.card {
+    border: none;
+}
+.main-body{
+    width: 70%;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid #75bf44;
+    background-color: transparent;
+}
+.carousel-indicators li.active {
+    background: #75bf44;
+}
+.image_footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.image_footer_center {
+    width: 5%;
+}
+.top-5-percent{
+    margin-top: 5%;
+}
+.bottom-5-percent{
+    margin-bottom: 5%;
+}
+.btn-white {
+    background-color: white;
+}
+.btn-width{
+    width: 60%;
+}
+.btn-width-15{
+    width: 15%;
+}
+.bg-whitesmoke {
+    background-color: #f4f4f4;
+}
+.bg-green {
+    background-color: #75bf44;
+}
+.bg-gray {
+    background-color: gray;
+}
+.left-10-px{
+    margin-left: 10px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-42{
+    font-size: 42px;
+}
+.font-bold{
+    font-weight: bold;
+}
+.width-15-percent{
+    width: 15%;
+}
+.width-25-percent {
+    width:25%;
+}
+.width-60-percent {
+    width:60%;
+}
+.img-convert-to-white {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+.img-dim {
+    filter: brightness(70%);
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.email_sub{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #A9A9A9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: #75bf44;
+  text-align: center;
+  height: 1.5em;
+  width: 40%;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: #fcfcfa;
+    padding: 0 .5em;
+    line-height: 1em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #75bf44;
+    background-color: #fcfcfa;
+    font-size: 20px;
+  }
+}
+#green{
+    color:#75bf44;
+}
+#white{
+    color:white;
+}
+#smoke{
+    color:#f4f4f4;
+}
+#red{
+    color:red;
+}

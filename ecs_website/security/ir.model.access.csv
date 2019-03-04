@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_subscribe_post,access_subscribe_post,model_subscribe_post,,1,1,1,1
+access_customer_contact,access_customer_contact,model_customer_contact,,1,1,1,1

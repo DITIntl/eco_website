@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Blog Post List: grid layout -->
+    <template id="blog_post_short" name="Blog Posts" inherit_id="website_blog.blog_post_short">
+        <xpath expr="//section[@class='mb0']" position="replace">
+            <section class="s_cover parallax pb40 pt128 bottom-5-percent" data-scroll-background-ratio="0" style="background-image: none;">
+                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website/static/src/img/background/blog/banner_blog.jpg&quot;); background-position: 50% 100%;"/>
+                <div class="container main-body">
+                    <div class="row s_nb_column_fixed" id="white">
+                        <div class="col-lg-12 s_title" data-name="Title">
+                            <h1 t-field="blog.name"/>
+                        </div>
+                        <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                            <p class="lead o_default_snippet_text">
+                                <span id="smoke">Home | </span>
+                                <span class="font-bold">Blog</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+        <!-- Replace Social network in blog -->
+        <xpath expr="//div[@class='o_sharing_links']" position="replace"/>
+    </template>
+
+    <!-- Option:Right Column: Search View -->
+    <template id="opt_blog_rc_search_view" name="Search" priority="1"
+            inherit_id="website_blog.index_right" active="True" customize_show="True">
+        <xpath expr="//div[@id='main_column']" position="attributes">
+            <attribute name="class">col-md-8</attribute>
+        </xpath>
+        <xpath expr="//div[@id='blog_right_column']" position="inside">
+            <section class="mt32">
+                <div class="input-group">
+                    <input class="form-control py-2 border-right-0 border" type="search" placeholder="Search for blogs" id="search_input"/>
+                    <span class="input-group-append">
+                      <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                            <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                </div>
+            </section>
+
+        </xpath>
+    </template>
+
+    <!-- Inherit Blog Post: Banner -->
+    <template id="blog_banner" name="Ecoblog_Banner" inherit_id="website_blog.blog_post_complete">
+        <xpath expr="//div[@id='title']" position="before">
+            <section class="s_cover parallax pb40 pt128 bottom-5-percent" data-scroll-background-ratio="0" style="background-image: none;">
+                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website/static/src/img/background/blog/banner_blog.jpg&quot;); background-position: 50% 100%;"/>
+                <div class="container main-body">
+                    <div class="row s_nb_column_fixed" id="white">
+                        <div class="col-lg-12 s_title" data-name="Title">
+                            <h1 t-field="blog.name"/>
+                        </div>
+                        <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                            <p class="lead o_default_snippet_text">
+                                <span id="smoke">Home | </span>
+                                <span class="font-bold">Blog</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+
+        <!-- Replace Social network in blog_post -->
+        <xpath expr="//a[@id='o_twitter_complete']" position="replace"/>
+        <xpath expr="//a[@id='o_facebook_complete']" position="replace"/>
+        <xpath expr="//a[@id='o_linkedin_complete']" position="replace"/>
+        <xpath expr="//a[@id='o_google_complete']" position="replace"/>
+    </template>
+
+    <template id="s_latest_posts_list_template">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="col-12 media mt-3 s_latest_posts_post">
+                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                    </t>
+                </a>
+                <div class="media-body ml-3 pb-2">
+                    <h4 t-field="p.name"/>
+                    <p t-field="p.subtitle"/>
+                    <p class="text-muted">Post by - <span t-field="p.author_id.name"/> <span t-field="p.post_date" t-options='{"format": "dd/MM/yyyy"}'/></p>
+                    <a class="btn btn-sm btn-primary" t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- Option: Lastest Post - List -->
+    <template id="s_latest_posts_1" name="Latest Posts - List" inherit_id="website_blog.blog_post_complete" active="False" customize_show="True">
+        <xpath expr="//section[@id='comments']" position="after">
+            <section class="s_latest_posts">
+                <div class="container">
+                    <h2 class="text-center">Latest Posts</h2>
+                    <div class="row js_get_posts"
+                        data-loading="true"
+                        data-template="ecs_website.s_latest_posts_list_template"/>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+</odoo>
