@@ -2,12 +2,12 @@
 <odoo>
     <data noupdate="1">
         <!-- Home Menu -->
-        <record id="menu_home" model="website.menu">
+        <!-- <record id="menu_home" model="website.menu">
             <field name="name">Home</field>
             <field name="url">/ecosoft</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">1</field>
-        </record>
+        </record> -->
 
         <!-- Our Approach Menu -->
         <record id="menu_our_approach" model="website.menu">
