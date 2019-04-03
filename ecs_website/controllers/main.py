@@ -10,16 +10,8 @@ class RouteWebsite(http.Controller):
             http.request.env['subscribe.post'].create(kw)
         return http.request.render('ecs_website.index')
 
-    # @http.route('/ecosoft/<model("theme.customize"):teacher>/',
-    #             auth='public', website=True)
-    # def teacher(self, teacher):
-    #     return http.request.render('ecs_website.biography', {
-    #         'person': teacher
-    #     })
-
     @http.route('/contact', auth='public', website=True)
     def contact(self, **kw):
-        print(kw)
         inform = kw.get('name', False)
         if inform:
             http.request.env['customer.contact'].create(kw)

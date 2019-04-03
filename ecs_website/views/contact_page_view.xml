@@ -126,12 +126,7 @@
                                             <input type="text" class="form-control" name="type_system1"/>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <span>What kind of system are you using?</span>
-                                            <input type="text" class="form-control" name="type_system2"/>
-                                        </div>
-                                    </div>
+                                    <div class="col-lg-6"/>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <span>What module(s) are you interested in?</span>
@@ -142,16 +137,6 @@
                                         <div class="form-group">
                                             <span>Reason(s) of finding a new system?</span>
                                             <textarea class="form-control" rows="5" name="reason"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 bg-whitesmoke pt8 pb8">
-                                        <div class="form-group">
-                                            <div class="col-lg-10">
-                                                <span>Please prove that you are human by solving the equation <em>(required)</em> <span id="red">*</span></span>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <input type="text" class="form-control" name="solve" required="required"/>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 s_btn text-center pt16 pb16" data-name="Buttons">

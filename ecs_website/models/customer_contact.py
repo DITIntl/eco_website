@@ -31,16 +31,9 @@ class CustomerContact(models.Model):
     type_system1 = fields.Char(
         string='What kind of system are you using?',
     )
-    type_system2 = fields.Char(
-        string='What kind of system are you using?',
-    )
     module_interesting = fields.Text(
         string='What module(s) are you interested in?',
     )
     reason = fields.Text(
         string='Reason(s) of finding a new system?',
-    )
-    solve = fields.Char(
-        string='Please prove that you are human by solving the equation',
-        required=True,
     )

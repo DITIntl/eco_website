@@ -45,10 +45,8 @@
                         <group>
                             <field name="type_system1"/>
                             <field name="module_interesting"/>
-                            <field name="solve"/>
                         </group>
                         <group>
-                            <field name="type_system2"/>
                             <field name="reason"/>
                         </group>
                     </group>
@@ -63,7 +61,6 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="view_customer_contact_list"/>
-        <!-- <field name="search_view_id" ref="view_blog_post_search"/> -->
         <field name="help" type="html">
             <p class="o_view_nocontent_empty_folder">
                 Not Contact
