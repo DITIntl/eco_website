@@ -49,7 +49,7 @@
                                             <div class="col-lg-8">
                                                 <h5 class="o_default_snippet_text" id="green">UNDERSTAND</h5>
                                                 <p class="text-muted o_default_snippet_text">
-                                                      ต้องเข้าใจกระบวนการทางธุรกิจและความต้องการอย่างชัดเจน
+                                                    ต้องเข้าใจกระบวนการทางธุรกิจและความต้องการอย่างชัดเจน
                                                 </p>
                                             </div>
                                         </div>
@@ -62,7 +62,7 @@
                                             <div class="col-lg-8">
                                                 <h5 class="o_default_snippet_text" id="green">SIMULATE</h5>
                                                 <p class="text-muted o_default_snippet_text">
-                                                      สามารถจำลองกระบวนการทำงานและปรับเข้ากับระบบ ERP ซอฟต์แวร์
+                                                    สามารถจำลองกระบวนการทำงานและปรับเข้ากับระบบ ERP ซอฟต์แวร์
                                                 </p>
                                             </div>
                                         </div>
@@ -75,7 +75,7 @@
                                             <div class="col-lg-8">
                                                 <h5 class="o_default_snippet_text" id="green">COMMUNICATE</h5>
                                                 <p class="text-muted o_default_snippet_text">
-                                                      พูดภาษาเดียวกันกับผู้บริหารและ users ไม่จำกัดเพียงแค่ภาษา IT
+                                                    พูดภาษาเดียวกันกับผู้บริหารและ users ไม่จำกัดเพียงแค่ภาษา IT
                                                 </p>
                                             </div>
                                         </div>
@@ -88,23 +88,22 @@
                                             <div class="col-lg-8">
                                                 <h5 class="o_default_snippet_text" id="green">TRANSFORM</h5>
                                                 <p class="text-muted o_default_snippet_text">
-                                                      สามารถเปลี่ยนความต้องการของธุรกิจให้กลายเป็นข้อมูลที่มีประโยชน์ต่อธุรกิจในรูปของรายงานซึ่งสอดคล้องกับมาตรฐานและกฎระเบียบทั้งภายในและภายนอกองค์กร
+                                                    สามารถเปลี่ยนความต้องการของธุรกิจให้กลายเป็นข้อมูลที่มีประโยชน์ต่อธุรกิจในรูปของรายงานซึ่งสอดคล้องกับมาตรฐานและกฎระเบียบทั้งภายในและภายนอกองค์กร
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="top-5-percent">
-                                    <img src="/ecs_website/static/src/img/background/our_approach/infographic_1.jpg" class="img-fluid mx-auto"/>
+                                    <img src="/ecs_website/static/src/img/background/our_approach/infographic_1.jpg" class="img-fluid mx-auto" data-original-title="" title="" aria-describedby="tooltip744508"/>
                                 </div>
                             </div>
-
-                            <section class="s_cover parallax bg-whitesmoke pb40 pt40 top-5-percent" data-scroll-background-ratio="0">
+                            <section class="s_cover parallax bg-whitesmoke pb40 pt40 top-5-percent" data-scroll-background-ratio="0" style="background-image: none;">
+                                <span class="s_parallax_bg"/>
                                 <div class="container main-body text-center">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EsNrzZdXNss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EsNrzZdXNss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"/>
                                 </div>
                             </section>
-
                             <section class="s_features_grid top-5-percent pb40">
                                 <div class="container main-body">
                                     <div class="row">

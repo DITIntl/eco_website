@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Home Menu -->
-        <!-- <record id="menu_home" model="website.menu">
-            <field name="name">Home</field>
-            <field name="url">/ecosoft</field>
-            <field name="parent_id" ref="website.main_menu"/>
-            <field name="sequence" type="int">1</field>
-        </record> -->
 
         <!-- Our Approach Menu -->
         <record id="menu_our_approach" model="website.menu">
@@ -34,12 +27,12 @@
         </record>
 
         <!-- Blog Menu -->
-        <!-- <record id="menu_blog" model="website.menu">
+        <record id="menu_blog" model="website.menu">
             <field name="name">Blog</field>
             <field name="url">/blog</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">35</field>
-        </record> -->
+        </record>
 
         <!-- Jobs Menu -->
         <record id="menu_jobs" model="website.menu">
@@ -55,14 +48,6 @@
             <field name="url">/contact</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">45</field>
-        </record>
-
-        <!-- Odoo Menu -->
-        <record id="menu_odoo_story" model="website.menu">
-            <field name="name">Odoo Story</field>
-            <field name="url">https://www.odoo.com/</field>
-            <field name="parent_id" ref="website.main_menu"/>
-            <field name="sequence" type="int">50</field>
         </record>
 
         <menuitem name="Page Views"

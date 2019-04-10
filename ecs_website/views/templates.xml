@@ -9,23 +9,6 @@
         </xpath>
     </template>
 
-    <!-- <template id="biography">
-        <t t-call="website.layout">
-            <t t-set="title">Academy</t>
-            <div class="oe_structure"/>
-            <div class="oe_structure">
-                <div class="container">
-                    <p>
-                        <h3 t-field="person.name"/>
-                        <p>Last modified: <i t-field="person.write_date" t-options='{"widget": "relative"}'/></p>
-                        <div t-field="person.biography"/>
-                    </p>
-                </div>
-            </div>
-            <div class="oe_structure"/>
-        </t>
-    </template> -->
-
     <!-- logo brand -->
     <template id="layout" name="Main layout" inherit_id="website.layout">
         <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">

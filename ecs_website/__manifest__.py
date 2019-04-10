@@ -9,7 +9,7 @@ Odoo Web Editor widget.
 ==========================
 
 """,
-    'version': '1.0',
+    'version': '12.0.1.0.0',
     'author': 'Saran Lim.',
     'depends': [
         'website',
@@ -26,7 +26,6 @@ Odoo Web Editor widget.
         'views/website_blog_templates.xml',
         'views/job_page_view.xml',
         'views/contact_page_view.xml',
-        'views/subscribe_view.xml',
         'views/contact_view.xml',
     ],
 }
