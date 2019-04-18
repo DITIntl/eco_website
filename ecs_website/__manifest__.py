@@ -14,6 +14,7 @@ Odoo Web Editor widget.
     'depends': [
         'website',
         'website_blog',
+        'website_hr_recruitment',
     ],
     'data': [
         'security/ir.model.access.csv',
@@ -28,4 +29,5 @@ Odoo Web Editor widget.
         'views/contact_page_view.xml',
         'views/contact_view.xml',
     ],
+    'installable': True,
 }
