@@ -4,7 +4,7 @@
     <template id="blog_post_short" name="Blog Posts" inherit_id="website_blog.blog_post_short">
         <xpath expr="//section[@class='mb0']" position="replace">
             <section class="s_cover parallax pb40 pt128 bottom-5-percent" data-scroll-background-ratio="0" style="background-image: none;">
-                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website/static/src/img/background/blog/banner_blog.jpg&quot;); background-position: 50% 100%;"/>
+                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website_blog/static/src/img/banner_blog.jpg&quot;); background-position: 50% 100%;"/>
                 <div class="container main-body">
                     <div class="row s_nb_column_fixed" id="white">
                         <div class="col-lg-12 s_title" data-name="Title">
@@ -49,7 +49,7 @@
     <template id="blog_banner" name="Ecoblog_Banner" inherit_id="website_blog.blog_post_complete">
         <xpath expr="//div[@id='title']" position="before">
             <section class="s_cover parallax pb40 pt128 bottom-5-percent" data-scroll-background-ratio="0" style="background-image: none;">
-                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website/static/src/img/background/blog/banner_blog.jpg&quot;); background-position: 50% 100%;"/>
+                <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website_blog/static/src/img/banner_blog.jpg&quot;); background-position: 50% 100%;"/>
                 <div class="container main-body">
                     <div class="row s_nb_column_fixed" id="white">
                         <div class="col-lg-12 s_title" data-name="Title">
@@ -101,7 +101,7 @@
                     <h2 class="text-center">Latest Posts</h2>
                     <div class="row js_get_posts"
                         data-loading="true"
-                        data-template="ecs_website.s_latest_posts_list_template"/>
+                        data-template="ecs_website_blog.s_latest_posts_list_template"/>
                 </div>
             </section>
         </xpath>

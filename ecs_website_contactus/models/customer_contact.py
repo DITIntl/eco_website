@@ -4,6 +4,7 @@ from odoo import models, fields
 
 class CustomerContact(models.Model):
     _name = 'customer.contact'
+    _description = 'Keep information new customer from website'
 
     name = fields.Char(
         string='Name',

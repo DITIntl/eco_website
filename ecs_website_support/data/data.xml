@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Support Menu -->
+        <record id="menu_our_approach" model="website.menu">
+            <field name="name">Support</field>
+            <field name="url">/support/ticket/submit</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+
+        <menuitem name="Page Views"
+            id="menu_page_views"
+            sequence="40"
+            parent="website.menu_website_configuration"/>
+
+    </data>
+</odoo>
