@@ -9,4 +9,4 @@ class RouteWebsite(http.Controller):
         inform = kw.get('name', False)
         if inform:
             http.request.env['customer.contact'].create(kw)
-        return http.request.render('ecs_website.contactus')
+        return http.request.render('ecs_website_contactus.contactus')

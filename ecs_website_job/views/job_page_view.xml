@@ -6,7 +6,7 @@
         <template id="job_inherit_header" inherit_id="website_hr_recruitment.index" name="Jobs Inherit">
             <xpath expr="//section[@class='mb16']" position="replace">
                 <section class="s_cover parallax pb40 pt128" data-scroll-background-ratio="0" style="background-image: none;">
-                    <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website/static/src/img/background/jobs/banner_jobs.jpg&quot;); background-position: 50% 0px;"/>
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website_job/static/src/img/banner_jobs.jpg&quot;); background-position: 50% 0px;"/>
                     <div class="container main-body">
                         <div class="row s_nb_column_fixed" id="white">
                             <div class="col-lg-12 s_title" data-name="Title">

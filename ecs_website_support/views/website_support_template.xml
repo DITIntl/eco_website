@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- <template id="support_front_assert" inherit_id="website.assets_frontend" name="Website Support Front Asserts">
+        <xpath expr="/t" position="inside">
+            <link rel="stylesheet" href="/ecs_website_support/static/src/css/support.css"/>
+        </xpath>
+    </template> -->
+
+    <template id="support_thank_you" name="Support Ticket Thank You">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="container mt16">
+                    <h1 class="text-center">Thank You</h1>
+                    <h3 class="text-muted text-center">We will get back to you shortly</h3>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="support_submit_ticket" name="Submit Support Ticket">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1 class="text-center mt16 mb16">Ecosoft Support</h1>
+                <form action="/support/ticket/process" method="POST" class="form-horizontal mt32" enctype="multipart/form-data">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <input style="display:none;" name="my_gold" value="256"/>
+                    <div t-attf-class="form-group #{error and 'person_name' in error and 'has-error' or ''}">
+                        <label class="control-label" for="person_name">Name <span style="color:red;">*</span></label>
+                        <input type="text" class="form-control" name="person_name" required="True" t-attf-value="#{person_name or ''}"/>
+                    </div>
+                    <div name="email_from_container" t-attf-class="form-group #{error and 'email' in error and 'has-error' or ''}">
+                        <label class="control-label" for="email">Email <span style="color:red;">*</span></label>
+                        <input type="email" class="form-control" name="email" required="True" t-attf-value="#{email or ''}" t-att-readonly="'readonly' if email else None"/>
+                    </div>
+
+                    <script>
+
+                        $(document).ready(function() {
+
+                            $('#file').change(function(){
+                                if(this.files.length > <t t-esc="setting_max_ticket_attachments"/>) {
+                                    alert("You can only upload " + <t t-esc="setting_max_ticket_attachments"/> + " files");
+                                }
+
+                                for (var x in this.files) {
+                                    if (this.files[x].size / 1024 > <t t-esc="setting_max_ticket_attachment_filesize"/>) {
+                                        alert(this.files[x].name + " exceeds the " + <t t-esc="setting_max_ticket_attachment_filesize"/> + "KB file size limit");
+                                        $('#file').val('');
+                                    }
+                                }
+                            });
+
+                        });
+
+                    </script>
+
+                    <div t-attf-class="form-group #{error and 'category' in error and 'has-error' or ''}">
+                        <label class="control-label" for="name">Category</label>
+                        <select class="form-control" id="category" name="category">
+                            <t t-foreach="categories" t-as="category">
+                                <option t-attf-value="#{category.id}"><t t-esc="category.name"/></option>
+                            </t>
+                        </select>
+                    </div>
+
+                    <div name="subject_container" t-attf-class="form-group #{error and 'subject' in error and 'has-error' or ''}">
+                        <label class="control-label" for="subject">Subject <span style="color:red;">*</span></label>
+                        <input type="subject" class="form-control" name="subject" required="True"/>
+                    </div>
+                    <div name="file_container" t-attf-class="form-group #{error and 'file' in error and 'has-error' or ''}">
+                        <label class="control-label" for="file">Add Attachments</label>
+                        <label class="custom-file">
+                            <input name="file" id="file" type="file" multiple="multiple"/>
+                            <span class="custom-file-control"/>
+                        </label>
+                    </div>
+                    <div t-attf-class="form-group #{error and 'description' in error and 'has-error' or ''}">
+                        <label class="control-label" for="description">Description <span style="color:red;">*</span></label>
+                        <textarea  class="form-control" name="description" rows="8" required="True"></textarea>
+                    </div>
+
+                    <t t-if="setting_google_recaptcha_active">
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                        <div t-attf-class="form-group #{error and 'description' in error and 'has-error' or ''}">
+                            <label class="control-label" for="reCAPTCHA">reCAPTCHA</label>
+                            <div class="g-recaptcha" t-attf-data-sitekey="#{setting_google_captcha_client_key}"/>
+                        </div>
+                    </t>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg">Submit Issue</button>
+                    </div>
+                </form>
+            </div>
+        </t>
+    </template>
+
+</odoo>
