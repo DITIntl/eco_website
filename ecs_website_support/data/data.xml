@@ -10,10 +10,5 @@
             <field name="sequence" type="int">50</field>
         </record>
 
-        <menuitem name="Page Views"
-            id="menu_page_views"
-            sequence="40"
-            parent="website.menu_website_configuration"/>
-
     </data>
 </odoo>

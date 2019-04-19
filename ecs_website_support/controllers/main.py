@@ -12,12 +12,10 @@ _logger = logging.getLogger(__name__)
 class SupportTicketController(http.Controller):
 
     @http.route('/support/ticket/submit', type="http",
-                auth="public", website=True)
+                auth="user", website=True)
     def support_submit_ticket(self, **kw):
         """Let's public and registered user submit a support ticket"""
-        person_name = ""
-        if http.request.env.user.name != "Public user":
-            person_name = http.request.env.user.name
+        person_name = http.request.env.user.name
 
         category_access = []
         for category_permission in http.request.env.user.groups_id:
@@ -28,19 +26,12 @@ class SupportTicketController(http.Controller):
             'website.support.settings', 'google_recaptcha_active')
         setting_google_captcha_client_key = request.env['ir.default'].get(
             'website.support.settings', 'google_captcha_client_key')
-        setting_max_ticket_attachments = request.env['ir.default'].get(
-            'website.support.settings', 'max_ticket_attachments')
-        setting_max_ticket_attachment_filesize = request.env['ir.default'].get(
-            'website.support.settings', 'max_ticket_attachment_filesize')
 
         return http.request.render(
             'ecs_website_support.support_submit_ticket',
             {'categories': ticket_categories,
              'person_name': person_name,
              'email': http.request.env.user.email,
-             'setting_max_ticket_attachments': setting_max_ticket_attachments,
-             'setting_max_ticket_attachment_filesize':
-                setting_max_ticket_attachment_filesize,
              'setting_google_recaptcha_active':
                 setting_google_recaptcha_active,
              'setting_google_captcha_client_key':
@@ -82,12 +73,15 @@ class SupportTicketController(http.Controller):
         create_dict = {}
         customer_id = request.env['res.partner'].sudo().search(
             [('name', '=', values['person_name'])])
+        project_id = request.env['project.project'].sudo().search(
+            [('project_index', '!=', False)])
+
         create_dict = {'name': values['subject'],
                        'partner_id': customer_id.id,
                        'email_from': values['email'],
                        'description': values['description'],
                        'tag_ids': [(6, 0, [values['category']])],
-                       'project_id': 2}
+                       'project_id': project_id.id}
 
         new_ticket_id = request.env['project.task'].sudo().create(create_dict)
 
