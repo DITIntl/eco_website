@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="contactus_form" inherit_id="website_crm.contactus_form">
+            <xpath expr="//div[@id='wrap']//div[@class='oe_structure']" position="before">
+                <section class="s_cover parallax pb40 pt128" data-scroll-background-ratio="0" style="background-image: none;">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website_contactus/static/src/img/banner_contact.jpg&quot;); background-position: 50% 0px;"/>
+                    <div class="container main-body">
+                        <div class="row s_nb_column_fixed" id="white">
+                            <div class="col-lg-12 s_title" data-name="Title">
+                                <h1 class="s_title_thin o_default_snippet_text">
+                                    <span class="font-bold" id="white">CONTACT US</span>
+                                </h1>
+                            </div>
+                            <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                                <p class="lead o_default_snippet_text">
+                                    <span id="smoke">Home | </span>
+                                    <span class="font-bold">Contact</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container main-body">
+                    <div class="top-5-percent text-center pb16">
+                        <h2>
+                            <span>GET</span>
+                            <span id="green">IN TOUCH</span>
+                        </h2>
+                    </div>
+                    <div class="row o_default_snippet_text">
+                        <div class="col-lg-6 pb16">
+                            <img style="width:100%;" src="/ecs_website_contactus/static/src/img/ecs_map.png" alt="maps"/>
+                        </div>
+                        <div class="col-lg-6 pb16">
+                            <h4 class="font-bold"><span t-field="res_company.name"/><br/></h4>
+                            <p class="pt16"><span class="font-bold">Head Office</span><br/>
+                                Tax ID : <span t-field="res_company.vat"/><br/>
+                                <t t-if="res_company.street"><span t-field="res_company.street"/></t>
+                                <t t-if="res_company.street2"><span>,</span><span t-field="res_company.street2"/></t>
+                                <t t-if="res_company.city"><span>,</span><span t-field="res_company.city"/></t>
+                                <t t-if="res_company.state_id"><span>,</span><span t-field="res_company.state_id"/></t>
+                                <t t-if="res_company.zip"><span t-field="res_company.zip"/></t>
+                                <t t-if="res_company.country_id"><span>,</span><span t-field="res_company.country_id"/></t>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="pt16 pb16" data-name="Box">
+                                        <img class="s_features_grid_icon" src="/ecs_website_contactus/static/src/img/icon/icon_contact_3.png" alt="Phone"/>
+                                        <div class="s_features_grid_content">
+                                            <p class="o_default_snippet_text font-bold">Phone</p>
+                                            <p class="o_default_snippet_text"><span t-field="res_company.phone"></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="pt16 pb16" data-name="Box">
+                                        <img class="s_features_grid_icon" src="/ecs_website_contactus/static/src/img/icon/icon_contact_1.png" alt="Email"/>
+                                        <div class="s_features_grid_content">
+                                            <p class="o_default_snippet_text font-bold">e-Mail</p>
+                                            <p class="o_default_snippet_text"><span t-field="res_company.email"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="pt16 pb16" data-name="Box">
+                                        <img class="s_features_grid_icon" src="/ecs_website_contactus/static/src/img/icon/icon_contact_2.png" alt="Mobile"/>
+                                        <div class="s_features_grid_content">
+                                            <p class="o_default_snippet_text font-bold">Mobile</p>
+                                            <p class="o_default_snippet_text">+66 (8) 1 841 7480</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+            <xpath expr="//div[@id='wrap']//div[@class='col-lg-8']" position="attributes">
+                <attribute name="class">col-lg-12</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wrap']//div[@class='col-lg-4']" position="replace"/>
+		</template>
+
+</odoo>
