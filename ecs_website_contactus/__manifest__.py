@@ -3,17 +3,19 @@
 
 {
     'name': 'Ecosoft Website Contact Form',
-    'summary': 'Build customized contact form in your website',
     'category': 'Website',
+    'summary': 'Generate leads from a contact form',
     'version': '12.0.1.0.0',
     'author': 'Saran Lim.',
-    'depends': [
-        'website',
-    ],
+    'description': """
+        Generate leads or opportunities in the CRM app from a contact form
+        published on the Contact us page of your website. This form can be
+        customized thanks to the *Form Builder* module
+        (available in Odoo Enterprise).
+    """,
+    'depends': ['website_crm'],
     'data': [
-        'security/ir.model.access.csv',
-        'views/contact_page_view.xml',
-        'views/contact_view.xml',
+        'views/website_crm_templates.xml',
     ],
     'installable': True,
 }

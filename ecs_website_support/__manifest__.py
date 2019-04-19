@@ -11,6 +11,7 @@
         'website',
         'project',
         'eco_project_index',
+        'website_crm'
     ],
     'data': [
         'data/data.xml',
