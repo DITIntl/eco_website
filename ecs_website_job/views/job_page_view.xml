@@ -4,37 +4,39 @@
 
         <!-- Jobs page Inherit-->
         <template id="job_inherit_header" inherit_id="website_hr_recruitment.index" name="Jobs Inherit">
-            <xpath expr="//section[@class='mb16']" position="replace">
-                <section class="s_cover parallax pb40 pt128" data-scroll-background-ratio="0" style="background-image: none;">
-                    <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website_job/static/src/img/banner_jobs.jpg&quot;); background-position: 50% 0px;"/>
-                    <div class="container main-body">
-                        <div class="row s_nb_column_fixed" id="white">
-                            <div class="col-lg-12 s_title" data-name="Title">
-                                <h1 class="s_title_thin o_default_snippet_text">
-                                    <span class="font-bold" id="white">JOIN OUR TEAM</span>
-                                </h1>
-                            </div>
-                            <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
-                                <p class="lead o_default_snippet_text">
-                                    <span id="smoke">Home | </span>
-                                    <span class="font-bold">Jobs</span>
-                                </p>
+            <xpath expr="//div[@class='oe_structure']" position="replace">
+                <div class="oe_structure">
+                    <section class="s_cover parallax pb40 pt128" data-scroll-background-ratio="0" style="background-image: none;">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg img-dim" style="background-image: url(&quot;/ecs_website_job/static/src/img/banner_jobs.jpg&quot;); background-position: 50% 0px;"/>
+                        <div class="container main-body">
+                            <div class="row s_nb_column_fixed" id="white">
+                                <div class="col-lg-12 s_title" data-name="Title">
+                                    <h1 class="s_title_thin o_default_snippet_text">
+                                        <span class="font-bold" id="white">JOIN OUR TEAM</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                                    <p class="lead o_default_snippet_text">
+                                        <span id="smoke">Home | </span>
+                                        <span class="font-bold">Jobs</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center mb16 offset-lg-2 col-lg-8 pt24">
-                            <h2>
-                                <span>JOIN</span>
-                                <span id="green">OUR TEAM</span>
-                            </h2>
-                            <h3 class="text-muted">
-                                <font style="font-size: 18px;">&amp;nbsp;</font>
-                                <font style="font-size: 18px;">Ecosoft is a Lean, Agile and Open Source organisation who works professionally with all stake holders, customer, supplier and team members!</font>
-                                <div class="pt16 text-center" style="font-size: 14px;"/>
-                            </h3>
+                    </section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-center mb16 offset-lg-2 col-lg-8 pt24">
+                                <h2>
+                                    <span>JOIN</span>
+                                    <span id="green">OUR TEAM</span>
+                                </h2>
+                                <h3 class="text-muted">
+                                    <font style="font-size: 18px;">&amp;nbsp;</font>
+                                    <font style="font-size: 18px;">Ecosoft is a Lean, Agile and Open Source organisation who works professionally with all stake holders, customer, supplier and team members!</font>
+                                    <div class="pt16 text-center" style="font-size: 14px;"/>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
