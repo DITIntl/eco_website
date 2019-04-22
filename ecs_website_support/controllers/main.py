@@ -44,8 +44,18 @@ class SupportTicketController(http.Controller):
         create_dict = {}
         customer_id = request.env['res.partner'].sudo().search(
             [('name', '=', values['person_name'])])
-        project_id = request.env['project.project'].sudo().search(
-            [('project_index', '!=', False)])
+
+        try:
+            project_name = \
+                values['subject'].split(':')[0].split('-')[1].strip()
+            project_id = request.env['project.project'].sudo().search(
+                [('name', '=', project_name.upper())])
+            if not project_id:
+                project_id = request.env['project.project'].sudo().search(
+                    [('project_index', '!=', False)])
+        except Exception:
+            project_id = request.env['project.project'].sudo().search(
+                [('project_index', '!=', False)])
 
         create_dict = {'name': values['subject'],
                        'partner_id': customer_id.id,
